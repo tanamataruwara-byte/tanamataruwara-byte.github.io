@@ -203,7 +203,7 @@ body{
 }
 
 /*Tentang*/
-.about{
+/* .about{
   grid-template-columns: 1.3fr 7fr;
   align-items: stretch;
 }
@@ -257,7 +257,60 @@ body{
     padding: .35rem .6rem;
     font-size: .8rem;
   }
+} */
+
+.about{
+  grid-template-columns: 1.3fr .7fr;
+  align-items: stretch;
 }
+.about h2{
+  margin-bottom: 10px;
+}
+.about p{
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+.bullet{
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  color: #111;
+}
+.about-card{
+  background:#fff ;
+  border: 1px solid rgba(0,0,0,.05);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow:var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+.badge{
+  position: absolute;
+  right: 9px;
+  top: 16px;
+  background: linear-gradient(135deg, var(--primary-1), var(--primary-2));
+  font-weight: 700;
+  font-size: .7rem;
+  padding: .20rem .6rem;
+  border-radius: 10px;
+  color: #fff;
+}
+@media (max-width:900px) {
+  .about{
+    grid-template-columns: 1fr;
+  }
+  .about-card{
+    padding: 24px;
+  }
+  .badge{
+    right: 16px;
+    top: 16px;
+    padding: .35rem .6rem;
+    font-size: .8rem;
+  }
+}
+
 
 /*CTA*/
 .cta{
